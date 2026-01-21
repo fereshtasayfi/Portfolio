@@ -1,0 +1,198 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profiel {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    margin-left: 500px;
+    margin-top: -80px;
+}
+
+.text {
+    margin-left: -3px;
+    margin-top: -60px;
+    
+}
+
+.title {
+    margin-left: 500px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.blokEen {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.blokEen::before {
+    content: "";
+    position:absolute;
+    top: 140px;
+    width: 45%;
+    height: 60%;
+    left: 450px;
+    background-color:rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.homeVideo {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.homeOverlay {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    bottom: 465px;
+}
+
+.sectionEen {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    border:  black solid 2px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(8, 8, 8, 0.75);
+}
+
+.homeOne, .homeTwo{
+    width: 22%;
+}
+
+.homeButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+
+.titleTwee {
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.secondHeader{
+    margin-left: 200px;
+    margin-top: 80px;
+
+}
+
+.rand {
+    width: 500px;
+    border: 4px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 18px 54px 18px 18px;
+    min-height: 130px;
+    margin-top: 160px;
+    margin-left: 150px;
+    box-shadow: 0px 0px 10px 0px rgba(8, 8, 8, 0.75);
+}
+
+.viewport {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 400ms ease;
+    will-change: transform;
+}
+
+.view {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.rand h2{
+    margin: 0 0 8px;
+}
+
+.rand p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.buttonPrev, .buttonNext {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: #e0dbdb;
+    cursor: pointer;
+    font-size: 19px;
+    display: grid;
+    place-items: center;
+    user-select: none;
+    z-index: 100;
+}
+
+
+.buttonNext:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.buttonPrev:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.buttonNext {
+    right: 10px;
+}
+
+.buttonPrev {
+    left: 10px;
+}
+
+.buttonPrev:disabled,
+.buttonNext:disabled {
+    opacity: 0,9;
+    cursor: default;
+}
+
+.layout {
+    display: flex;
+}
+
+.contact {
+    margin-left: 200px;
+    margin-top: 160px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 130px;
+    margin-top: 160px;
+    margin-left: 150px;
+    box-shadow: 0px 0px 10px 0px rgba(8, 8, 8, 0.75);
+}
